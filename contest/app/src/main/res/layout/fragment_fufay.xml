@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_color"
+    tools:context=".fufay$PlaceholderFragment"
+    >
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/webView"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:layout_marginBottom="2dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="0">
+
+        <Button
+            android:background="@mipmap/slide_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_toleft"
+            android:layout_weight="0.2"
+            android:onClick="toleft" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fufay_btn"
+            android:layout_weight="0.6"
+            android:layout_margin="0dp"
+            android:background="@drawable/login_btn"
+            android:onClick="showEditDialog"
+            />
+
+        <Button
+            android:background="@mipmap/slide_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_toright"
+            android:layout_weight="0.2"
+            android:layout_margin="0dp"
+            android:onClick="toright"/>
+
+    </TableRow>
+
+</LinearLayout>

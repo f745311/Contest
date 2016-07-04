@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background_color">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="會員申請同意書"
+        android:id="@+id/licenceTopic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/licenceCheckBox"
+        android:layout_below="@+id/licenceTopic"
+        android:layout_marginTop="10px">
+        <TextView
+            android:id="@+id/licence"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="歡迎您加入88say生活命理網！為了確保您的權益，申請前請先詳閱以下同意書之內容，當您按下「接受」後，表示您已經詳閱本同意書之內容，同時願意遵守本同意書所規範之各項規定。\n
+1. 註冊時請填寫正確之真實姓名及通訊地址等資料，以方便會員專區之專屬資料的正確性，88say生活命理網必須遵守個人資料保護法的規定，對於使用者在本站登錄的所有資料予以保密，除下列情形外，未經使用者同意前，本站絕不將使用者之個人資料洩漏給88say生活命理網以外之第三者知悉。\n
+  (1)基於法律上各項規定。\n
+  (2)使用之個人因違反中華民國法令，本站為配合相關主管機關調查時。\n
+  (3)緊急情況下為保障本網站或其他使用者之權益時。\n
+2. 使用者於本站登錄之各項資料，本站得於合理之範圍將各項資料進行統計(例如年齡層分析)、研究或其他合法之用途，以提供本站或合作單位使用。\n
+3. 會員應妥善保管帳號及密碼，並為進入系統後所從事之所有行為負責，為維護您自身之權益，請勿將帳號及密碼出借或轉讓他人使用。\n
+4. 禁止使用本網站張貼任何違反法律之文字、圖片或檔案，使用者若有違反任何法律之情事，應自負所有法律責任。\n
+5. 本站固定每周寄發電子報，內容是由駐站老師精心撰寫的命理文章，若無做退訂動作，我們將在每周固定發送一期。\n
+6. 使用者因不當使用或從事非法之行為，侵害本站之權益，應負損害賠償之責任。本站並保有終止會員資格及使用各項服務之權利。嚴重情節本站可報案網路警察處理。\n
+7. 其他未竟事宜，依照中華民國法令規定及國際網際網路規範辦理，任何產生之爭議，以臺灣台北地方法院為第一審管轄法院。\n
+								\t\t\t\t\t				"
+            />
+    </ScrollView>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我同意接受本條款及其更新之內容，並遵守所有條款"
+        android:id="@+id/licenceCheckBox"
+        android:onClick="checkBoxchecked"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80px" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        android:id="@+id/licenceAcceptButton"
+        android:background="@drawable/login_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:enabled="false" />
+
+
+</RelativeLayout>

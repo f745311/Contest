@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">生活命理</string>
+    <string name="app_Title">生活命理</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="Surname">姓:</string>
+    <string name="Name">名:</string>
+    <string name="E_mail">E-mail:</string>
+    <string name="Password">密碼:</string>
+    <string name="Sex">性別:</string>
+    <string name="BirthTitle">生日:</string>
+    <string name="BirthY">年</string>
+    <string name="BirthM">月</string>
+    <string name="BirthD">日</string>
+    <string name="BirthT">時辰:</string>
+    <string name="News">是否同意訂閱電子報?</string>
+
+    <string name="personal_setting">個人設定</string>
+    <string name="home">主畫面</string>
+    <string name="designers">製作群</string>
+    <string name="logout">登出</string>
+    <string name="login">登入</string>
+    <string name="edit">編輯</string>
+    <string name="edit_password">修改密碼</string>
+    <string name="send">送出</string>
+
+    <string name="man">男</string>
+    <string name="woman">女</string>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--主畫面的imagebuttons的settings-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" >
+        <shape>
+            <corners android:radius="4sp" />
+            <stroke android:width="5sp" android:color="#a0276983" />
+            <gradient android:startColor="#5f5f66" android:endColor="#5f5f66"/>
+            <padding android:left="2sp" android:right="2sp"
+                android:bottom="2sp" android:top="2sp"/>
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape>
+            <corners android:radius="4sp" />
+            <gradient android:startColor="#5f5f66" android:endColor="#5f5f66"/>
+            <stroke android:width="3sp" android:color="#a0276983" />
+
+        </shape>
+    </item>
+    <item >
+        <shape>
+            <corners android:radius="4sp" />
+            <gradient android:startColor="#005f5f66" android:endColor="#005f5f66"/>
+            <stroke android:width="3sp" android:color="#005f5f66" />
+        </shape>
+    </item>
+</selector>

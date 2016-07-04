@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#83282929">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="9">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="命宮主星臉譜"
+            android:textColor="#000000"
+            android:background="@drawable/fragment_btn"
+            android:id="@+id/button_A"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textColor="#000000"
+            android:background="@drawable/fragment_btn2"
+            android:text="優缺點"
+            android:id="@+id/button_B"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textColor="#000000"
+            android:background="@drawable/fragment_btn3"
+            android:text="課題"
+            android:id="@+id/button_C"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textColor="#000000"
+            android:background="@drawable/fragment_btn2"
+            android:text="風采"
+            android:id="@+id/button_D"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#9257cfd9"
+        android:id="@+id/linear">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="411dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="請於上方輸入問題"
+            android:id="@+id/content2"
+            android:layout_weight="0.9"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="開始測"
+            android:id="@+id/start"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.1"
+            android:background="@drawable/login_btn"/>
+
+    </LinearLayout>
+</LinearLayout>

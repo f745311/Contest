@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_member"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary">
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/member_textstyle"
+        android:layout_margin="3sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Surname"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:id="@+id/sur_name"
+            android:layout_margin="10sp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/SurName_content"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit"
+                android:id="@+id/edit_surname"
+                android:layout_gravity="right"
+                android:background="#0062d7ef"
+                android:layout_alignParentEnd="false"
+                android:textColor="@drawable/edit_btn"
+                android:layout_alignParentRight="true"
+                android:textSize="18sp"
+                android:onClick="editSurnameOnClick" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/member_textstyle"
+        android:layout_marginLeft="3sp"
+        android:layout_marginRight="3sp"
+        android:layout_marginBottom="3sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Name"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:id="@+id/name_"
+            android:layout_margin="10sp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/Name_content"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit"
+                android:id="@+id/edit_name"
+                android:layout_gravity="right"
+                android:background="#009b9b9b"
+                android:layout_alignParentEnd="false"
+                android:textColor="@drawable/edit_btn"
+                android:layout_alignParentRight="true"
+                android:textSize="18sp"
+                android:onClick="editNameOnClick" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/member_textstyle"
+        android:layout_marginLeft="3sp"
+        android:layout_marginRight="3sp"
+        android:layout_marginBottom="3sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/E_mail"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:id="@+id/E_mail"
+            android:layout_margin="10sp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/mail_content"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_password"
+                android:id="@+id/edit_password"
+                android:layout_gravity="right"
+                android:background="#009b9b9b"
+                android:layout_alignParentEnd="false"
+                android:textColor="@drawable/edit_btn"
+                android:layout_alignParentRight="true"
+                android:textSize="18sp"
+                android:onClick="editPasswordOnClick" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/member_textstyle"
+        android:layout_marginLeft="3sp"
+        android:layout_marginRight="3sp"
+        android:layout_marginBottom="3sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Password"
+            android:id="@+id/pass_word"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_margin="10sp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/password_content"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/member_textstyle"
+        android:layout_marginLeft="3sp"
+        android:layout_marginRight="3sp"
+        android:layout_marginBottom="3sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Sex"
+            android:id="@+id/Sex"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_margin="10sp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/sex_content"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit"
+                android:id="@+id/edit_sex"
+                android:layout_gravity="right"
+                android:background="#009b9b9b"
+                android:layout_alignParentEnd="false"
+                android:textColor="@drawable/edit_btn"
+                android:layout_alignParentRight="true"
+                android:textSize="18sp"
+                android:onClick="editSexOnClick" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/member_textstyle"
+        android:layout_marginLeft="3sp"
+        android:layout_marginRight="3sp"
+        android:layout_marginBottom="3sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BirthTitle"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:id="@+id/Birth_Title"
+            android:layout_margin="10sp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1911"
+            android:id="@+id/BirthYY"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BirthY"
+            android:id="@+id/Birth_Year"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/BirthMM"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BirthM"
+            android:id="@+id/Birth_Month"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/BirthDD"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BirthD"
+            android:id="@+id/Birth_Day"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit"
+                android:id="@+id/edit_birthday"
+                android:layout_gravity="right"
+                android:background="#009b9b9b"
+                android:layout_alignParentEnd="false"
+                android:textColor="@drawable/edit_btn"
+                android:layout_alignParentRight="true"
+                android:textSize="18sp"
+                android:onClick="editBirthDaysOnClick" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/member_textstyle"
+        android:layout_marginLeft="3sp"
+        android:layout_marginRight="3sp"
+        android:layout_marginBottom="3sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BirthT"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:id="@+id/Birth_Time"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/BirthTT"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit"
+                android:id="@+id/edit_birthtime"
+                android:layout_gravity="right"
+                android:background="#009b9b9b"
+                android:layout_alignParentEnd="false"
+                android:textColor="@drawable/edit_btn"
+                android:layout_alignParentRight="true"
+                android:textSize="18sp"
+                android:onClick="editBirthTimesOnClick" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/payAdImageButton"
+        android:src="@mipmap/money_correct02"
+        android:background="@drawable/imagebuttonshape"
+        android:scaleType="fitXY"
+        android:layout_margin="1dp" />
+
+</LinearLayout>

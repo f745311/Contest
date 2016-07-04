@@ -1,0 +1,5 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <!--開頭動畫-->
+    <item android:drawable="@mipmap/background01"	android:duration="5000"/>
+</animation-list>

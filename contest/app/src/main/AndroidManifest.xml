@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="dmcl.csmuse2016"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="16" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        tools:replace="android:icon"
+        android:label="@string/app_Title"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".AnimationActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".LoginActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".AccountLicence" >
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".CreateNewAccount">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".HomePageActivity"
+            android:launchMode="singleTask">
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".MinpanCatchActivity"
+            android:label="命盤抓取"
+            android:theme="@style/AppTheme.Base">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".FreeActivity"
+            android:label="免費卜卦"
+            android:theme="@style/AppTheme.Base"
+            android:parentActivityName=".AnimationActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".AnimationActivity"/>
+
+
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".MinsuActivity"
+            android:label="紫微命書"
+            android:theme="@style/AppTheme.Base">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".fufay"
+            android:theme="@style/AppTheme.NoActionBar" >></activity>
+        <activity
+            android:name="com.unionpaysdk.web.WebviewActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".MemberActivity"
+            android:label="會員專區"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".EightWordMinpanCatchActivity"
+            android:label="八字命盤Catch"
+            android:theme="@style/AppTheme.Base">
+        </activity>
+    </application>
+
+</manifest>

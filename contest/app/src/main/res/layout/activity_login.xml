@@ -1,0 +1,111 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_color"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="" >
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="申請帳號/密碼"
+        android:id="@+id/back"
+        android:background="@drawable/login_btn"
+        android:layout_toRightOf="@+id/guestlogin"
+        android:layout_alignParentBottom="true"
+        android:onClick="newAccount"
+        android:layout_margin="5px" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="訪客使用"
+        android:id="@+id/guestlogin"
+        android:background="@drawable/login_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="false"
+        android:layout_margin="5px" />
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Login"
+        android:background="@drawable/mybutton"
+        android:textColor="#0b070b"
+        android:text="登入"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:layout_alignParentBottom="false"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/guestlogin" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="密碼"
+        android:inputType="textPassword"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textColorHint="#aaaaaa"
+        android:paddingLeft="10sp"
+        android:layout_marginBottom="20dp"
+        android:shadowColor="#5d5b5b"
+        android:maxLength="20"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/sign_in_button"
+        android:layout_gravity="center_horizontal|bottom" />
+
+    <EditText
+        android:id="@+id/Account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="帳號"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textColorHint="#aaaaaa"
+        android:autoText="false"
+        android:paddingLeft="10sp"
+        android:layout_above="@+id/password"
+        android:maxLength="20"
+        android:layout_marginBottom="49dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginRight="60dp"
+        android:inputType="text" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_above="@+id/Account">
+
+        <ImageView
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:id="@+id/imageView"
+            android:background="@mipmap/titletest01"
+            android:layout_alignParentTop="false"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

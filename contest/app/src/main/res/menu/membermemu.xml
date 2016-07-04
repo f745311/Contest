@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MinpanActivity">
+
+    <!--toolbar上的按鈕settings-->
+    <item android:id="@+id/action_home"
+        android:title="@string/home"
+        android:orderInCategory="90"
+        android:icon="@mipmap/hombutton"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/settings"
+        android:title="@string/personal_setting"
+        android:orderInCategory="100"
+        android:icon="@mipmap/ic_action_overflow"
+        app:showAsAction="ifRoom">
+
+        <menu>
+
+            <item android:id="@+id/action_logout"
+                android:title="@string/logout"
+                android:icon="@mipmap/ic_action_accounts_white"
+                android:orderInCategory="103"/>
+        </menu>
+
+    </item>
+</menu>

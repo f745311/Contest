@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_color">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                <ImageButton
+
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/button_topleft"
+                    android:src="@mipmap/pugua_correct03"
+                    android:background="@drawable/imagebuttonshape"
+                    android:scaleType="fitXY"
+                    android:layout_margin="3dp" />
+                <ImageButton
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/minbook_correct02"
+                    android:background="@drawable/imagebuttonshape"
+                    android:id="@+id/button_topright"
+                    android:scaleType="fitXY"
+                    android:layout_margin="3dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/button_middle"
+                    android:src="@mipmap/minpan_correct01"
+                    android:background="@drawable/imagebuttonshape"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/button_middle_bottom"
+                    android:src="@mipmap/gua_correct02"
+                    android:background="@drawable/imagebuttonshape"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageButton
+
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/button_bottomleft"
+                    android:src="@mipmap/money_correct02"
+                    android:background="@drawable/imagebuttonshape"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="left|bottom"
+                    android:layout_margin="3dp" />
+                <ImageButton
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/member_correct01"
+                    android:background="@drawable/imagebuttonshape"
+                    android:id="@+id/button_bottomright"
+                    android:scaleType="fitXY"
+                    android:layout_margin="3dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

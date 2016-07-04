@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_catcheight"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary">
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="八字命盤"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:id="@+id/textView2" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#c9c9c9"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="國曆"
+                android:textColor="#ffffff"
+                android:background="#8e8e8e"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/textView3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="農曆"
+                android:textColor="#ffffff"
+                android:background="#8e8e8e"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/textView4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/character_Birth"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/character_LunarBirth"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="性別"
+                android:textColor="#ffffff"
+                android:background="#8e8e8e"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/textView7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="虛歲"
+                android:textColor="#ffffff"
+                android:background="#8e8e8e"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/textView8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/character_Sex"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/character_Age"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.2" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="#c9c9c9"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="時柱"
+                android:textColor="#ffffff"
+                android:background="#787878"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/textView5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/GanInfo4"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/GanZhi4"
+                android:textColor="#000000" />
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingTop="5px">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:gravity="center"
+                    android:id="@+id/ZhiInfo4"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:layout_marginTop="-4dp" />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="#b6b6b6"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="日柱"
+                android:textColor="#ffffff"
+                android:background="#696969"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/textView6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/GanInfo3"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/GanZhi3"
+                android:textColor="#000000" />
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingTop="5px">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:gravity="center"
+                    android:id="@+id/ZhiInfo3"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:layout_marginTop="-4dp" />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="#c9c9c9"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="月柱"
+                android:textColor="#ffffff"
+                android:background="#787878"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/textView9" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/GanInfo2"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/GanZhi2"
+                android:textColor="#000000" />
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingTop="5px">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/ZhiInfo2"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:layout_marginTop="-4dp" />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="#b6b6b6"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="年柱"
+                android:textColor="#ffffff"
+                android:background="#696969"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/textView10" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/GanInfo1"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/GanZhi1"
+                android:textColor="#000000" />
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingTop="5px">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:gravity="center"
+
+                    android:id="@+id/ZhiInfo1"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:layout_marginTop="-4dp" />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="開始測"
+        android:id="@+id/button2"
+        android:layout_weight="0.01"
+        android:background="@drawable/login_btn"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="#b6b6b6"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="38 ~ 47歲"
+                android:textColor="#ffffff"
+                android:background="#696969"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/textView45" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/D_GanInfo4"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/D_GanZhi4"
+                android:textColor="#000000" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.6"
+                android:paddingTop="5px">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:gravity="center"
+                    android:id="@+id/D_ZhiInfo4"
+                    android:textColor="#000000" />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="#c9c9c9"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="28 ~ 37歲"
+                android:textColor="#ffffff"
+                android:background="#787878"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/textView41" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/D_GanInfo3"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/D_GanZhi3"
+                android:textColor="#000000" />
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.6"
+                android:paddingTop="5px">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:gravity="center"
+                    android:layout_weight="0.6"
+                    android:id="@+id/D_ZhiInfo3"
+                    android:textColor="#000000" />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="#b6b6b6"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="18 ~ 27歲"
+                android:textColor="#ffffff"
+                android:background="#696969"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/textView37" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/D_GanInfo2"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/D_GanZhi2"
+                android:textColor="#000000" />
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.6"
+                android:paddingTop="5px">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:gravity="center"
+                    android:id="@+id/D_ZhiInfo2"
+                    android:textColor="#000000" />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="#c9c9c9"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="8 ~ 17歲"
+                android:textColor="#ffffff"
+                android:background="#787878"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/textView33" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=""
+                android:layout_weight="1"
+                android:id="@+id/D_GanInfo1"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=""
+                android:layout_weight="1"
+                android:id="@+id/D_GanZhi1"
+                android:textColor="#000000" />
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.6"
+                android:paddingTop="5px">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=""
+                    android:id="@+id/D_ZhiInfo1"
+                    android:textColor="#000000" />
+            </ScrollView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:background="#505050"
+            android:text="大\n運"
+            android:id="@+id/textView23" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="#b6b6b6"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="88 ~ 97歲"
+                android:textColor="#ffffff"
+                android:background="#696969"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/textView49" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/D_GanInfo9"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/D_GanZhi9"
+                android:textColor="#000000" />
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.6"
+                android:paddingTop="5px">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:gravity="center"
+                    android:id="@+id/D_ZhiInfo9"
+                    android:textColor="#000000" />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="#c9c9c9"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="78 ~ 87歲"
+                android:textColor="#ffffff"
+                android:background="#787878"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/textView53" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/D_GanInfo8"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/D_GanZhi8"
+                android:textColor="#000000" />
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.6"
+                android:paddingTop="5px">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:gravity="center"
+                    android:id="@+id/D_ZhiInfo8"
+                    android:textColor="#000000" />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="#b6b6b6"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="68 ~ 77歲"
+                android:textColor="#ffffff"
+                android:background="#696969"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/textView57" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/D_GanInfo7"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/D_GanZhi7"
+                android:textColor="#000000" />
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.6"
+                android:paddingTop="5px">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:gravity="center"
+                    android:id="@+id/D_ZhiInfo7"
+                    android:textColor="#000000" />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="#c9c9c9"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="58 ~ 67歲"
+                android:textColor="#ffffff"
+                android:background="#787878"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/textView61" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/D_GanInfo6"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/D_GanZhi6"
+                android:textColor="#000000" />
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.6"
+                android:paddingTop="5px">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:gravity="center"
+                    android:id="@+id/D_ZhiInfo6"
+                    android:textColor="#000000" />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="#b6b6b6"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="48 ~ 57歲"
+                android:textColor="#ffffff"
+                android:background="#696969"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/textView65" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/D_GanInfo5"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/D_GanZhi5"
+                android:textColor="#000000" />
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.6"
+                android:paddingTop="5px">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:gravity="center"
+                    android:id="@+id/D_ZhiInfo5"
+                    android:textColor="#000000" />
+            </ScrollView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="#c9c9c9"
+        android:layout_gravity="center_horizontal">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="時間"
+                android:textColor="#ffffff"
+                android:background="#8e8e8e"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/SolarName1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="0.7"
+                android:id="@+id/SolarDate1"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="距離剩"
+                android:textColor="#ffffff"
+                android:background="#8e8e8e"
+                android:gravity="center"
+                android:id="@+id/textView30"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:id="@+id/SolarDiff1"
+                android:layout_weight="1"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="時間"
+                android:textColor="#ffffff"
+                android:background="#8e8e8e"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/SolarName2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:id="@+id/SolarDate2"
+                android:layout_weight="0.7"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="距離剩"
+                android:textColor="#ffffff"
+                android:background="#8e8e8e"
+                android:gravity="center"
+                android:id="@+id/textView32"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/SolarDiff2"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+<LinearLayout
+android:orientation="vertical"
+android:id="@+id/left_drawer"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_gravity="start">
+</LinearLayout>
+
+
+
+
+    </android.support.v4.widget.DrawerLayout>
